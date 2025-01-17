@@ -5,4 +5,5 @@ SUBDIRS += \
     OpenGLWidgetTest \
     PathTest \
     QtQuick_HelloWorld \
+    TreeViewVsTreeWidget \
     WindowPosition

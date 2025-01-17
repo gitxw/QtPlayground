@@ -6,34 +6,40 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>974</width>
-    <height>550</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>QListView和QListWidget对比</string>
+   <string>QTreeView和QTreeWidget对比</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>QListView (Model-Based)</string>
+       <string>QTreeView (Model-Based)</string>
       </property>
      </widget>
     </item>
     <item row="0" column="1">
      <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>QListWidget (Item-Based)</string>
+       <string>QTreeWidget (Item-Based)</string>
       </property>
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QListView" name="listView"/>
+     <widget class="QTreeView" name="treeView"/>
     </item>
     <item row="1" column="1">
-     <widget class="QListWidget" name="listWidget"/>
+     <widget class="QTreeWidget" name="treeWidget">
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -42,7 +48,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>974</width>
+     <width>800</width>
      <height>21</height>
     </rect>
    </property>
