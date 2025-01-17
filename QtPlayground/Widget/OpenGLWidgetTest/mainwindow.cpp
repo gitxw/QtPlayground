@@ -4,6 +4,13 @@
 #include <QApplication>
 #include <QDir>
 
+/*
+本程序使用QOpenGLWidget快速的显示图像，由于该控件使用GPU资源，
+帧率比使用CPU有巨大的提升，同时可显著降低CPU的使用率。
+
+实测核显能到70～100fps；独显能到200fps
+*/
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -33,12 +40,13 @@ MainWindow::~MainWindow()
 void MainWindow::slotTimerUpdateUI()
 {
     static int index = 0;
+    // 播放图像
     ui->openGLWidget->setImage(m_img_list[index++]);
     if (index >= m_img_list.size()) {
         index = 0;
     }
+    // 统计并显示总FPS
     m_played_count++;
-
     int fps = m_played_count * 1000 / m_et.elapsed();
     ui->label_fps->setText("fps:" + QString::number(fps));
 }
@@ -47,7 +55,7 @@ void MainWindow::on_pushButton_start_clicked()
 {
     m_played_count = 0;
     m_et.start();
-    m_timer->start(1);
+    m_timer->start(1); // 使用1ms的Timer
 }
 
 void MainWindow::on_pushButton_stop_clicked()
