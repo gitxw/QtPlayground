@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>972</width>
+    <height>690</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Qt中的特殊路径</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <property name="rowWrapPolicy">
+     <enum>QFormLayout::RowWrapPolicy::DontWrapRows</enum>
+    </property>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_currentPath">
+      <property name="text">
+       <string>QDir::currentPath()</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="label_currentPath_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_homePath">
+      <property name="text">
+       <string>QDir::homePath()</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="label_homePath_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_rootPath">
+      <property name="text">
+       <string>QDir::rootPath()</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="label_rootPath_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_tempPath">
+      <property name="text">
+       <string>QDir::tempPath()</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="label_tempPath_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_applicationDirPath">
+      <property name="text">
+       <string>QCoreApplication::applicationDirPath()</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLabel" name="label_applicationDirPath_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_applicationDisplayName">
+      <property name="text">
+       <string>QCoreApplication::applicationDisplayName()</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLabel" name="label_applicationDisplayName_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_applicationFilePath">
+      <property name="text">
+       <string>QCoreApplication::applicationFilePath()</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLabel" name="label_applicationFilePath_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_applicationName">
+      <property name="text">
+       <string>QCoreApplication::applicationName()</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLabel" name="label_applicationName_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_desktopFileName">
+      <property name="text">
+       <string>QCoreApplication::desktopFileName()</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QLabel" name="label_desktopFileName_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="label_DesktopLocation">
+      <property name="text">
+       <string>QStandardPaths::DesktopLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QLabel" name="label_DesktopLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="label_DocumentsLocation">
+      <property name="text">
+       <string>QStandardPaths::DocumentsLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QLabel" name="label_DocumentsLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="0">
+     <widget class="QLabel" name="label_FontsLocation">
+      <property name="text">
+       <string>QStandardPaths::FontsLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="1">
+     <widget class="QLabel" name="label_FontsLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="0">
+     <widget class="QLabel" name="label_ApplicationsLocation">
+      <property name="text">
+       <string>QStandardPaths::ApplicationsLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="1">
+     <widget class="QLabel" name="label_ApplicationsLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="0">
+     <widget class="QLabel" name="label_MusicLocation">
+      <property name="text">
+       <string>QStandardPaths::MusicLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="1">
+     <widget class="QLabel" name="label_MusicLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="0">
+     <widget class="QLabel" name="label_MoviesLocation">
+      <property name="text">
+       <string>QStandardPaths::MoviesLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="1">
+     <widget class="QLabel" name="label_MoviesLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="0">
+     <widget class="QLabel" name="label_PicturesLocation">
+      <property name="text">
+       <string>QStandardPaths::PicturesLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="1">
+     <widget class="QLabel" name="label_PicturesLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="0">
+     <widget class="QLabel" name="label_TempLocation">
+      <property name="text">
+       <string>QStandardPaths::TempLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="1">
+     <widget class="QLabel" name="label_TempLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="0">
+     <widget class="QLabel" name="label_HomeLocation">
+      <property name="text">
+       <string>QStandardPaths::HomeLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="1">
+     <widget class="QLabel" name="label_HomeLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="0">
+     <widget class="QLabel" name="label_AppLocalDataLocation">
+      <property name="text">
+       <string>QStandardPaths::AppLocalDataLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="1">
+     <widget class="QLabel" name="label_AppLocalDataLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="0">
+     <widget class="QLabel" name="label_CacheLocation">
+      <property name="text">
+       <string>QStandardPaths::CacheLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="1">
+     <widget class="QLabel" name="label_CacheLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="0">
+     <widget class="QLabel" name="label_GenericCacheLocation">
+      <property name="text">
+       <string>QStandardPaths::GenericCacheLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="1">
+     <widget class="QLabel" name="label_GenericCacheLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="22" column="0">
+     <widget class="QLabel" name="label_GenericDataLocation">
+      <property name="text">
+       <string>QStandardPaths::GenericDataLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="22" column="1">
+     <widget class="QLabel" name="label_GenericDataLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="23" column="0">
+     <widget class="QLabel" name="label_RuntimeLocation">
+      <property name="text">
+       <string>QStandardPaths::RuntimeLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="23" column="1">
+     <widget class="QLabel" name="label_RuntimeLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="24" column="0">
+     <widget class="QLabel" name="label_ConfigLocation">
+      <property name="text">
+       <string>QStandardPaths::ConfigLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="24" column="1">
+     <widget class="QLabel" name="label_ConfigLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="25" column="0">
+     <widget class="QLabel" name="label_DownloadLocation">
+      <property name="text">
+       <string>QStandardPaths::DownloadLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="25" column="1">
+     <widget class="QLabel" name="label_DownloadLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="26" column="0">
+     <widget class="QLabel" name="label_GenericConfigLocation">
+      <property name="text">
+       <string>QStandardPaths::GenericConfigLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="26" column="1">
+     <widget class="QLabel" name="label_GenericConfigLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="27" column="0">
+     <widget class="QLabel" name="label_AppDataLocation">
+      <property name="text">
+       <string>QStandardPaths::AppDataLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="27" column="1">
+     <widget class="QLabel" name="label_AppDataLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="28" column="0">
+     <widget class="QLabel" name="label_AppConfigLocation">
+      <property name="text">
+       <string>QStandardPaths::AppConfigLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="28" column="1">
+     <widget class="QLabel" name="label_AppConfigLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="29" column="0">
+     <widget class="QLabel" name="label_PublicShareLocation">
+      <property name="text">
+       <string>QStandardPaths::PublicShareLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="29" column="1">
+     <widget class="QLabel" name="label_PublicShareLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+    <item row="30" column="0">
+     <widget class="QLabel" name="label_TemplatesLocation">
+      <property name="text">
+       <string>QStandardPaths::TemplatesLocation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="30" column="1">
+     <widget class="QLabel" name="label_TemplatesLocation_val">
+      <property name="text">
+       <string>-----</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>972</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
