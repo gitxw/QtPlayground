@@ -1,3 +1,4 @@
 TEMPLATE = subdirs
 
-SUBDIRS += QtQuick_HelloWorld
+SUBDIRS += QtQuick_HelloWorld \
+    QtQuick_SSMonitor
